@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang = "en-US">
+
+<head>
+<!-- CSS stuff here -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  h2 {
+    font-family: "Raleway", sans-serif
+    text-align: "center"
+  }
+
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+
+  label {
+    font-size: 22px}
+
+  }
+
+  body{
+    background-color: "w3-red"
+    .center {
+        margin: auto;
+        width: 50%;
+        /*border: 3px solid green;*/
+        padding: 10px;
+    }
+  }
+  </style>
+</head>
+
+<body class="w3-container">
+ <!-- style="padding:50px 500px"> -->
+
+<form action="/results" name ="theForm" method = "post">
+
+    <h2 class ="question_header">Question 1</h2>
+<!-- Question and answers here -->
+    <label for = "q1">How often do you travel by plane?</label><br>
+    <input type="radio" name="q1" value ="3">Never<br>
+    <input type="radio" name="q1" value ="5">Once a year or less<br>
+    <input type="radio" name="q1" value ="4">Once a month or less<br>
+    <input type="radio" name="q1" value ="0">A few times per month<br>
+    <input type="radio" name="q1" value ="1">A few times per week<br>
+    <input type="radio" name="q1" value ="2">Every day<br><br><br><br>
+
+    <h2 class ="question_header">Question 2</h2>
+
+    <label for = "q2">Do you have any children 18?</label><br>
+    <input type="radio" name="q2" value ="0">No<br>
+    <input type="radio" name="q2" value ="1">Yes<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 3</h2>
+    <label for = "q3">In a row of three seats, who should get to use the two arm rests?</label><br>
+    <input type="radio" name="q3" value ="1">The arm rests should be shared<br>
+    <input type="radio" name="q3" value ="3">The person in the middle seat gets both arms rests<br>
+    <input type="radio" name="q3" value ="4">Whoever puts their arm on the arm rest first<br>
+    <input type="radio" name="q3" value ="2">The people in the aisle and window seats get both arm rests<br>
+    <input type="radio" name="q3" value ="0">Other<br><br><br><br>
+
+    <h2 class ="question_header">Question 4</h2>
+
+    <label for = "q4">In a row of two seats, who should get to use the arm rest?</label><br>
+    <input type="radio" name="q4" value ="1">The arm rests should be shared<br>
+    <input type="radio" name="q4" value ="3">The person in the aisle<br>
+    <input type="radio" name="q4" value ="4">Whoever puts their arm on the arm rest first<br>
+    <input type="radio" name="q4" value ="2">The person in the window<br>
+    <input type="radio" name="q4" value ="0">Other<br><br><br><br>
+
+    <h2 class ="question_header">Question 5</h2>
+
+    <label for = "q5">Who should have control over the window shade?</label><br>
+    <input type="radio" name="q5" value ="0">Everyone in the row should have some say<br>
+    <input type="radio" name="q5" value ="1">The person in the window seat should have exclusive control<br><br><br><br>
+
+    <h2 class ="question_header">Question 6</h2>
+
+    <label for = "q6">Is it rude to move to an unsold seat on a plane?</label><br>
+    <input type="radio" style="vertical-align: middle; margin: 0px;" name="q6" value ="0">No, not rude at all<br>
+    <input type="radio" style="vertical-align: middle; margin: 0px;" name="q6" value ="1">Yes, somewhat rude<br>
+    <input type="radio" style="vertical-align: middle; margin: 0px;" name="q6" value ="2">Yes, very rude<br><br><br><br>
+
+    <h2 class ="question_header">Question 7</h2>
+
+    <label for = "q7">Generally speaking, is it rude to say more than a few words to the stranger sitting next to you on a plane?</label><br>
+    <input type="radio" name="q7" value ="0">No, not rude at all<br>
+    <input type="radio" name="q7" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q7" value ="2">Yes, very rude<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 8</h2>
+
+    <label for = "q8">On a 6 hour flight from NYC to LA, how many times is it acceptable to get up if you're not in an aisle seat?</label><br>
+    <input type="radio" name="q8" value ="1">It is not okay to get up during flight<br>
+    <input type="radio" name="q8" value ="3">Once<br>
+    <input type="radio" name="q8" value ="5">Twice<br>
+    <input type="radio" name="q8" value ="4">Three times<br>
+    <input type="radio" name="q8" value ="0">Four times<br>
+    <input type="radio" name="q8" value ="2">Five or more times<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 9</h2>
+
+    <label for = "q9">Under normal circumstances, does a person who reclines their seat during a flight have any obligation to the person sitting behind them?</label><br>
+    <input type="radio" name="q9" value ="0">No, the person on the flight has no obligation to the person behind them<br>
+    <input type="radio" name="q9" value ="1">Yes, they should not recline their chair if the person behind them asks them not to<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 10</h2>
+
+    <label for = "q10">Is it rude to ask someone to switch seats with you in order to be closer to friends?</label><br>
+    <input type="radio" name="q10" value ="0">No, not rude at all<br>
+    <input type="radio" name="q10" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q10" value ="2">Yes, very rude<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 11</h2>
+
+    <label for = "q11">Is it rude to ask someone to switch seats with you in order to be closer to family?</label><br>
+    <input type="radio" name="q11" value ="0">No, not rude at all<br>
+    <input type="radio" name="q11" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q11" value ="2">Yes, very rude<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 12</h2>
+
+    <label for = "q12">Is it rude to wake a passenger up if you are trying to go to the bathroom?</label><br>
+    <input type="radio" name="q12" value ="0">No, not rude at all<br>
+    <input type="radio" name="q12" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q12" value ="2">Yes, very rude<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 13</h2>
+
+    <label for = "q13">Is it rude to wake a passenger up if you are trying to walk around?</label><br>
+    <input type="radio" name="q13" value ="0">No, not rude at all<br>
+    <input type="radio" name="q13" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q13" value ="2">Yes, very rude<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 14</h2>
+
+    <label for = "q14">In general, is it rude to bring a baby on a plane?</label><br>
+    <input type="radio" name="q14" value ="0">No, not rude at all<br>
+    <input type="radio" name="q14" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q14" value ="2">Yes, very rude<br><br><br><br>
+
+
+    <h2 class ="question_header">Question 15</h2>
+
+    <label for = "q15">In general, is it rude to knowingly bring unruly children on a plane?</label><br>
+    <input type="radio" name="q15" value ="0">No, not rude at all<br>
+    <input type="radio" name="q15" value ="1">Yes, somewhat rude<br>
+    <input type="radio" name="q15" value ="2">Yes, very rude<br><br><br><br>
+
+    <h2 class ="question_header">Question 16</h2>
+
+
+    <label for = "q16">Have you ever used personal electronics during take off or landing in violation of a flight attendant's direction?</label><br>
+    <input type="radio" name="q16" value ="0">No<br>
+    <input type="radio" name="q16" value ="1">Yes<br><br><br><br>
+
+    <h2 class ="question_header">Question 17</h2>
+
+
+    <label for="q18">Gender</label><br>
+    <input type="radio" name="q18" value ="1">Male<br>
+    <input type="radio" name="q18" value ="0">Female<br><br><br><br>
+
+    <h2 class ="question_header">Question 18</h2>
+
+
+    <label for ="q19">Education</label><br>
+    <input type="radio" name="q19" value ="3">18-29<br>
+    <input type="radio" name="q19" value ="2">30-44<br>
+    <input type="radio" name="q19" value ="4">45-60<br>
+    <input type="radio" name="q19" value ="0">60 +<br><br><br><br>
+
+    <h2 class ="question_header">Question 19</h2>
+
+
+    <label for ="q20">Income</label><br>
+    <input type="radio" name="q20" value ="3">$0 - $24,999<br>
+    <input type="radio" name="q20" value ="2">$25,000 - $49,999<br>
+    <input type="radio" name="q20" value ="4">$50,000 - $99,999<br>
+    <input type="radio" name="q20" value ="0">$100,000 - $149,999<br>
+    <input type="radio" name="q20" value ="1">$150,000 +<br><br><br><br>
+
+    <h2 class ="question_header">Question 20</h2>
+
+
+    <label for ="q21">Education</label><br>
+    <input type="radio" name="q21" value ="3">Less than high school degree<br>
+    <input type="radio" name="q21" value ="2">High school degree<br>
+    <input type="radio" name="q21" value ="4">Some college or Associate degree<br>
+    <input type="radio" name="q21" value ="0">Bachelor degree<br>
+    <input type="radio" name="q21" value ="1">Graduate degree<br><br><br><br>
+
+    <h2 class ="question_header">Question 21</h2>
+
+    <label for ="q22">Height (inches)</label><br>
+    <input type="text" name="q22" id="height"> </input><br><br><br><br>
+
+    <button class = "w3-center" id="button" onclick="postData()">Submit</button>
+
+
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+
+function postData(){
+// These variables get all the answers from the selected radio buttons above
+  var q1radios = document.getElementsByName("q1");
+  var q2radios = document.getElementsByName("q2");
+  var q3radios = document.getElementsByName("q3");
+  var q4radios = document.getElementsByName("q4");
+  var q5radios = document.getElementsByName("q5");
+  var q6radios = document.getElementsByName("q6");
+  var q7radios = document.getElementsByName("q7");
+  var q8radios = document.getElementsByName("q8");
+  var q9radios = document.getElementsByName("q9");
+  var q10radios = document.getElementsByName("q10");
+  var q11radios = document.getElementsByName("q11");
+  var q12radios = document.getElementsByName("q12");
+  var q13radios = document.getElementsByName("q13");
+  var q14radios = document.getElementsByName("q14");
+  var q15radios = document.getElementsByName("q15");
+  var q16radios = document.getElementsByName("q16");
+  // var q17radios = document.getElementsByName("q17");
+  // 17 is commented out because I didn't use it in my model
+  var q18radios = document.getElementsByName("q18");
+  var q19radios = document.getElementsByName("q19");
+  var q20radios = document.getElementsByName("q20");
+  var q21radios = document.getElementsByName("q21");
+  q22 = document.getElementbyId("height").value
+  var q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q18, q19, q20;
+  var q21;
+
+  // So, I know I should probably have the below things written as a function or in a for loop but I really could not figure out how to do it in javascript
+  for (var i = 0, length = q1radios.length; i < length; i++) {
+      if (q1radios[i].checked) {
+
+          q1 = radios[i].value;
+
+          break;}
+        }
+
+  for (var i = 0, length = q2radios.length; i < length; i++) {
+      if (q2radios[i].checked) {
+
+          q2 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q3radios.length; i < length; i++) {
+      if (q3radios[i].checked) {
+
+          q3 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q4radios.length; i < length; i++) {
+      if (q4radios[i].checked) {
+
+          q4 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q5radios.length; i < length; i++) {
+      if (q5radios[i].checked) {
+
+          q5 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q6radios.length; i < length; i++) {
+      if (q6radios[i].checked) {
+
+          q6 = radios[i].value;
+
+          break;}
+        }
+
+  for (var i = 0, length = q7radios.length; i < length; i++) {
+      if (q7radios[i].checked) {
+
+          q7 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q8radios.length; i < length; i++) {
+      if (q8radios[i].checked) {
+
+          q8 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q9radios.length; i < length; i++) {
+      if (q9radios[i].checked) {
+
+          q9 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q10radios.length; i < length; i++) {
+      if (q10radios[i].checked) {
+
+          q10 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q11radios.length; i < length; i++) {
+      if (q11radios[i].checked) {
+
+          q11 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q12radios.length; i < length; i++) {
+      if (q12radios[i].checked) {
+
+          q12 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q13radios.length; i < length; i++) {
+      if (q13radios[i].checked) {
+
+          q13 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q13radios.length; i < length; i++) {
+      if (q13radios[i].checked) {
+
+          q13 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q14radios.length; i < length; i++) {
+      if (q14radios[i].checked) {
+
+          q14 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q15radios.length; i < length; i++) {
+      if (q15radios[i].checked) {
+
+          q15 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q16radios.length; i < length; i++) {
+      if (q16radios[i].checked) {
+
+          q16 = radios[i].value;
+
+          break;}
+        }
+
+
+  // for (var i = 0, length = q17radios.length; i < length; i++) {
+  //     if (q17radios[i].checked) {
+  //
+  //         q17 = radios[i].value;
+  //
+  //         break;}
+  //       }
+  //     }
+
+  for (var i = 0, length = q18radios.length; i < length; i++) {
+      if (q18radios[i].checked) {
+
+          q18 = radios[i].value;
+
+          break;}
+        }
+
+
+  for (var i = 0, length = q19radios.length; i < length; i++) {
+        if (q19radios[i].checked) {
+
+            q19 = radios[i].value;
+
+            break;}
+          }
+
+  for (var i = 0, length = q21radios.length; i < length; i++) {
+      if (q21radios[i].checked) {
+
+          q21 = radios[i].value;
+
+          break;}
+        }
+
+
+}
+
+  </script>
+
+  </body>
+  </html>
